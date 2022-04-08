@@ -1,6 +1,4 @@
-import { ReactComponent as Arrow } from '../img/arrow_1.svg';
-// import { FoodList } from '../Components/Home/home';
-// import GuideForm from '../Components/Guide/Guide'
+
 
 const Home = ({
     setList,
