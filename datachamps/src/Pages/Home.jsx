@@ -13,7 +13,7 @@ const Home = ({
                         <h2>Problem Statement</h2>
                     </header>
                     <p className="SubText">
-                    How might Skillet employee achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
+                    How might "Taco Bar" employees achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
                     </p>
                 </div>
 
@@ -23,7 +23,7 @@ const Home = ({
                         <h4>What aspects of the problem can you solve through an information solution?</h4>
                     </header>
                     <p className="SubText">
-                    Skillet wants to have a  database information system that is best suited for their needs:
+                    Taco Bar wants to have a database information system that is best suited for their needs:
                     <ul>
                         <li>Real-time data</li>
                         <li>Ability to construct an analytics report</li>

@@ -32,7 +32,7 @@ const Header = () => {
                     <Link onClick={() => closeMenu()} to="/about">About</Link>
                 </Menu>
             }
-            <h1 className="header-heading">Team Datachamps</h1>
+            <h1 className="header-heading">Capstone: Datachamps</h1>
             {!isMobile &&
                 <div className="header-menu">
                     <Link className="header-link" to="/">Home</Link>

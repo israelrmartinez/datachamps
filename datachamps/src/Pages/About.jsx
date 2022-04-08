@@ -5,14 +5,13 @@ import {
 function About() {
     const mystyle = {
         border: '1px white',
-        marginTop: '10px',
-        marginBottom: '10px',
-        marginLeft: '20px',
-        float: 'center'
+        margin: '1rem',
+        float: 'center',
+        'max-width': '210px'
     };
     return (
         <div>
-        <h2>Authors and Contact Information</h2>
+        <h2>Team members</h2>
             <div class = "flex-container2">
             <div class="flex1">
             <Card style={mystyle}>
