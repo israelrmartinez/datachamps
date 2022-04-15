@@ -10,49 +10,41 @@ function About() {
         'max-width': '210px'
     };
     return (
-        <div>
-        <h2>Team members</h2>
+        <div class="about-container">
+        <h2>Team</h2>
             <div class = "flex-container2">
-            <div class="flex1">
-            <Card style={mystyle}>
+            <Card>
             <CardImg className="about-images" img src="img/kateryna.jpg" alt="image of Kateryna" />
             <CardBody>
-                <CardTitle>Kateryna Tymofeieva</CardTitle>
+                <CardTitle className="team-name">Kateryna Tymofeieva</CardTitle>
                 <CardText>PM, UX Designer</CardText>
                 <CardText>Strengths: Teamwork, Curiousity, Leadership </CardText>
             </CardBody>
             </Card>
-            </div>
-            <div class="flex1">
-            <Card style={mystyle}>
-            <CardImg className="about-images" img src="img/anusha.jpg" alt="image of a man with a corndog" />
+            <Card>
+            <CardImg className="about-images" img src="img/anusha.jpg" alt="image of Anusha" />
             <CardBody>
-                <CardTitle>Anusha Nasrulai</CardTitle>
+                <CardTitle className="team-name">Anusha Nasrulai</CardTitle>
                 <CardText>Researcher, Data Analyst</CardText>
                 <CardText>Strengths: Perspective, Honesty, Creativity</CardText>
             </CardBody>
             </Card>
-            </div>
-            <div class="flex1">
-            <Card style={mystyle}>
-            <CardImg className="about-images" img src="img/israel.jpg" alt="image of woman with winged eyeliner" />
+            <Card>
+            <CardImg className="about-images" img src="img/israel.jpg" alt="image of Israel" />
             <CardBody>
-            <CardTitle>Israel Martinez</CardTitle>
+                <CardTitle className="team-name">Israel Martinez</CardTitle>
                 <CardText>Developer</CardText>
                 <CardText>Strengths: Humility, Prudence, Kindness</CardText>
             </CardBody>
             </Card>
-            </div>
-            <div class="flex1">
-            <Card style={mystyle}>
-            <CardImg className="about-images" img src="img/ryan.jpg" alt="image of a man by a sunset" />
+            <Card>
+            <CardImg className="about-images" img src="img/ryan.jpg" alt="image of Ryan" />
             <CardBody>
-            <CardTitle>Ryan Lee</CardTitle>
+                <CardTitle>Ryan Lee</CardTitle>
                 <CardText>Developer</CardText>
                 <CardText>Strengths: Fairness, Humor, Curiousity</CardText>
             </CardBody>
             </Card>
-            </div>
             </div>
         </div>
     );

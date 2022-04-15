@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import './header.css';
 
-const MOBILE_SIZE = 523;
+const MOBILE_SIZE = 720;
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_SIZE);
@@ -23,20 +23,22 @@ const Header = () => {
   
     return (
         <div className="header">
-            {isMobile &&
-                <Menu 
-                    onStateChange={(state) => handleStateChange(state)}
-                    isOpen={menuOpen} className="mobile-header"
-                >
-                    <Link onClick={() => closeMenu()} to="/">Home</Link>
-                    <Link onClick={() => closeMenu()} to="/about">About</Link>
-                </Menu>
-            }
-            <h1 className="header-heading">Capstone: Datachamps</h1>
             {!isMobile &&
                 <div className="header-menu">
                     <Link className="header-link" to="/">Home</Link>
                     <Link className="header-link" to="/about">About</Link>
+                </div>
+            }
+            <h1 className="header-heading">Datachamps</h1>
+            {isMobile &&
+                <div className="mobile-header">
+                    <Menu right
+                        onStateChange={(state) => handleStateChange(state)}
+                        isOpen={menuOpen} pageWrapId="mobile-wrap" overlayClassName="mobile-overlay" menuClassName="mobile-menu"
+                    >
+                        <Link onClick={() => closeMenu()} to="/">Home</Link>
+                        <Link onClick={() => closeMenu()} to="/about">About</Link>
+                    </Menu>
                 </div>
             }
         </div>
