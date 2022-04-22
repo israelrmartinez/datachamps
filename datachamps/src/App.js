@@ -35,6 +35,8 @@ function App() {
     // </div>
     <Router>
       <Header/>
+      <Home />
+      <About/>
       {/* <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
@@ -43,16 +45,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
       </Menu> */}
-      <div>
-        <Switch>
-          <Route path="/about">
-            <About/>
-          </Route>     
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+            
     </Router>
   );
 }

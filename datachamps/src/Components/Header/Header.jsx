@@ -23,14 +23,14 @@ const Header = () => {
   
     return (
         <div className="header">
-            {!isMobile &&
+            {/* {!isMobile &&
                 <div className="header-menu">
                     <Link className="header-link" to="/">Home</Link>
                     <Link className="header-link" to="/about">About</Link>
                 </div>
-            }
+            } */}
             <h1 className="header-heading">Datachamps</h1>
-            {isMobile &&
+            {/* {isMobile &&
                 <div className="mobile-header">
                     <Menu right
                         onStateChange={(state) => handleStateChange(state)}
@@ -40,7 +40,7 @@ const Header = () => {
                         <Link onClick={() => closeMenu()} to="/about">About</Link>
                     </Menu>
                 </div>
-            }
+            } */}
         </div>
 
     )
