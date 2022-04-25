@@ -29,7 +29,7 @@ const Header = () => {
                     <Link className="header-link" to="/about">About</Link>
                 </div>
             } */}
-            <h1 className="header-heading">Datachamps</h1>
+            <h1 className="header-heading">Skillet Analytics</h1>
             {/* {isMobile &&
                 <div className="mobile-header">
                     <Menu right

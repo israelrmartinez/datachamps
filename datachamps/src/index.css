@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1f1f1;
+  background-color: #ff5000;
 }
 
 code {
@@ -20,7 +20,15 @@ code {
   display: flex;
 } */
 .container {
+  /* display: flex; */
+  /* background-color: #FFFFFF; */
+  height: 40vh;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  
   margin: 1rem 1rem;
+  overflow: hidden;
 }
 
 .about-container {
@@ -74,7 +82,7 @@ code {
   font-family:'PreloSlabW01-SemiBold';
   font-size: 26px;
   font-weight: 500;
-  color: #ff5000;
+  color: #f1f1f1;
 }
 
 .card-subtitle {
@@ -87,5 +95,5 @@ code {
   margin: 0.6rem 0;
   font-family: 'roboto';
   font-size: 16px;
-  color: #808080;
+  /* color: #808080; */
 }
