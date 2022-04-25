@@ -29,6 +29,9 @@ function App() {
         <Solution />
       </FadeInSection>
       <FadeInSection>
+        <Audience />
+      </FadeInSection>
+      <FadeInSection>
         <About/>
       </FadeInSection>
       <FadeInSection>
@@ -86,12 +89,6 @@ const Solution = () => {
         <p className="SubText">
         We are introducing Skillet Management Information System - a database that stores organizational data in a single space that is organized to create efficient, insightful analytics of most up-to-date data. Additionally, we are using Tableau to create Analytics Dashboard that automatically updates with data from database (live connection) to visualize most up-to-date KPI metrics.
         </p>
-        <header>
-          <h2>Audience</h2>
-          <p className="SubText">
-          Our intended audience is all employees who interacts with data at Skillet, which includes Leadership, Operations and IT. Leadership uses data to understand whether the business as a whole is staying on track with its goals, Operations use analytics to better understand KPIs such as revenue, labor cost and more. IT Team will be the staff we will handoff our project to so they will be responsible for maintenance and troubleshooting.
-          </p>
-        </header>
       </div>
 
   )
@@ -101,11 +98,11 @@ const Audience = () => {
   return (
       <div className="container">
         <header>
-            <h2>Solution</h2>
+          <h2>Audience</h2>
+          <p className="SubText">
+          Our intended audience is all employees who interacts with data at Skillet, which includes Leadership, Operations and IT. Leadership uses data to understand whether the business as a whole is staying on track with its goals, Operations use analytics to better understand KPIs such as revenue, labor cost and more. IT Team will be the staff we will handoff our project to so they will be responsible for maintenance and troubleshooting.
+          </p>
         </header>
-        <p className="SubText">
-        We are introducing Skillet Management Information System - a database that stores organizational data in a single space that is organized to create efficient, insightful analytics of most up-to-date data. Additionally, we are using Tableau to create Analytics Dashboard that automatically updates with data from database (live connection) to visualize most up-to-date KPI metrics.
-        </p>
         {/* <header>
           <h2>Problem</h2>
           <p className="SubText">

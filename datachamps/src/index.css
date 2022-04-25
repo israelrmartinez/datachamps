@@ -22,7 +22,7 @@ code {
 .container {
   /* display: flex; */
   /* background-color: #FFFFFF; */
-  height: 40vh;
+  height: 60vh;
   overflow: hidden;
   justify-content: flex-start;
   align-items: center;
