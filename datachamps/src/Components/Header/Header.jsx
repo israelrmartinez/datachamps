@@ -20,6 +20,7 @@ const Header = () => {
 
     const handleStateChange = state => setMenuOpen(state.isOpen);
     const closeMenu = () => setMenuOpen(false);
+    const style = {"font-size": "14px", "letter-spacing": "unset"}
   
     return (
         <div className="header">
@@ -30,6 +31,8 @@ const Header = () => {
                 </div>
             } */}
             <h1 className="header-heading">Skillet Analytics</h1>
+            <h2 className="header-heading" style={style}>Data that drives restaurant operations</h2>
+            <button className="button"><a href="https://skilletfood.com/" target="_blank">Dine at Skillet</a></button>
             {/* {isMobile &&
                 <div className="mobile-header">
                     <Menu right

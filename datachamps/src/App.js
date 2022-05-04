@@ -22,21 +22,10 @@ function App() {
   return (
     <Router>
       <Header/>
-      <FadeInSection>
-        <ProblemStatement />
-      </FadeInSection>
-      <FadeInSection>
-        <Solution />
-      </FadeInSection>
-      <FadeInSection>
-        <Audience />
-      </FadeInSection>
-      <FadeInSection>
-        <About/>
-      </FadeInSection>
-      <FadeInSection>
-        <Home />
-      </FadeInSection>
+      <ProblemStatement />
+      <Solution />
+      <About/>
+      <Home />
     </Router>
   );
 }
