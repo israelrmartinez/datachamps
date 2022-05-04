@@ -17,15 +17,35 @@ import {
 import Header from './Components/Header/Header';
 import React from "react";
 import { slide as Menu} from "react-burger-menu";
+// import aos from 'aos';
+// import 'aos/dist/aos.cjs'
+// aos.init()
 
 function App() {
+  document.addEventListener('aos:in', ({ detail }) => {
+    console.log('animated in', detail);
+  });
+  
+  document.addEventListener('aos:out', ({ detail }) => {
+    console.log('animated out', detail);
+  });
+  
   return (
     <Router>
       <Header/>
+      <SponsorInfo />
+      {/* <div data-aos="fade-in"> */}
       <ProblemStatement />
+      {/* </div> */}
       <Solution />
+      <Audience />
+      <S3 />
+      <Sql />
+      <Tableau />
+      <div>
+        <button className="button"><a href="https://skilletfood.com/" target="_blank">Dine at Skillet</a></button>
+      </div>
       <About/>
-      <Home />
     </Router>
   );
 }
@@ -49,6 +69,22 @@ function FadeInSection(props) {
   );
 }
 
+const SponsorInfo = () => {
+  return (
+      <div className="container">
+        <header>
+            <h2>Our sponsor</h2>
+        </header>
+        <p className="SubText">
+        We are sponsored by Skillet Restaurant Group, a local business that currently has four restaurant locations in Seattle and growing. They offer dine-in and take-out services and specialize in American fare.
+        </p>
+        <p className="SubText">
+        “In short, Skillet is a modern diner, born on the streets of Seattle in a vintage Airstream kitchen, famous for its all-day brunch menu delivering elevated street food to Seattle world travelers.”
+        </p>
+      </div>
+  )
+}
+
 const ProblemStatement = () => {
   return (
       <div className="container">
@@ -56,16 +92,15 @@ const ProblemStatement = () => {
             <h2>Problem Statement</h2>
         </header>
         <p className="SubText">
-        Skillet relies on a manual data import system that requires long time to upload and analyze, while also leaving the room for human error. Skillet does not get accurate analytics report on their daily orders, revenue and costs or labor.
+        How might Skillet employee achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
         </p>
         <header>
           <h2>Problem</h2>
           <p className="SubText">
-          How might "Taco Bar" employees achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
+          Skillet relies on a manual data import system that requires long time to upload and analyze, while also leaving the room for human error. Skillet does not get accurate analytics report on their daily orders, revenue and costs or labor.
           </p>
         </header>
       </div>
-
   )
 }
 
@@ -100,6 +135,45 @@ const Audience = () => {
         </header> */}
       </div>
 
+  )
+}
+
+const S3 = () => {
+  return (
+      <div className="container">
+        <header>
+          <h2>Amazon S3</h2>
+          <p className="SubText">
+          With Skillet’s current usage of the Toast point-of-sale system, data is saved within the Amazon Web Services S3 storage cloud. By implementing the retrieval of data stored in AWS, we have exported these reports for Skillet to gain access to point of sale information and further gain precise business insights about how their restaurants are operating during Covid.
+          </p>
+        </header>
+      </div>
+  )
+}
+
+const Sql = () => {
+  return (
+      <div className="container">
+        <header>
+          <h2>SQL Server</h2>
+          <p className="SubText">
+          Skillet serves hundreds of customers every week at their multiple locations and must consider multiple factors to run their restaurants. We have established a SQL server database for Skillet in order to help organize and consolidate information about their restaurant into this location. By importing the Toast reports into this SQL server, Skillet will be able to access these reports through a centralized database. By utilizing this system, Skillet will be able to expand upon this data archive to further capture data on a day-to-day basis.
+          </p>
+        </header>
+      </div>
+  )
+}
+
+const Tableau = () => {
+  return (
+      <div className="container">
+        <header>
+          <h2>Tableau</h2>
+          <p className="SubText">
+          Data visualization is a powerful tool for communicating data insights to non-technical audiences. We used Tableau to create the Skillet analytics dashboard. We built business reports based on Skillet’s KPIs, which are unique to their company as a small, local group of restaurants operating during Covid. The Live Connection feature enables immediate access to data stored in the database to reflect real-time analytics for restaurant operations. Tableau is accessible to a business audience, and Skillet will be able to create additional visualizations as their business expands and they identify new KPIs to measure. 
+          </p>
+        </header>
+      </div>
   )
 }
 
