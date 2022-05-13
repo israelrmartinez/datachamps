@@ -32,6 +32,11 @@ const Header = () => {
             } */}
             <h1 className="header-heading">Skillet Analytics</h1>
             <h2 className="header-heading" style={style}>Data that drives restaurant operations</h2>
+            <div>
+                <button className="button"><a href="https://skilletfood.com/" target="_blank">Dine at Skillet now!</a></button>
+            </div>
+            <div className="image-layover"/>
+            {/* <img className="image" src="img/skillet.jpg" alt="Skillet logo" /> */}
             {/* {isMobile &&
                 <div className="mobile-header">
                     <Menu right

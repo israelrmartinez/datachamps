@@ -42,9 +42,6 @@ function App() {
       <S3 />
       <Sql />
       <Tableau />
-      <div>
-        <button className="button"><a href="https://skilletfood.com/" target="_blank">Dine at Skillet</a></button>
-      </div>
       <About/>
     </Router>
   );

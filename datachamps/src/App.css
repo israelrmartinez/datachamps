@@ -31,19 +31,40 @@
 
 
 .button {
-  margin: auto;
-  background-color: #F1F1F1;
+  margin: 20% auto;
+  background-color: #FFFFFF;
   border: none;
-  border-radius: 50px;
-  color: black;
+  /* border-radius: 50px; */
+  color: #ff5000;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
+  font-weight: 700;
+  /* position: absolute; */
+  /* top: 50%; */
+  min-height:30px; 
+  min-width: 120px;
+}
+
+.button:hover {
+  background-color: #ff5000;
+  color: #FFFFFF;
+  transition-duration: 0.2s;
 }
 a {
   text-decoration: none;
   font-family: 'Yu Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image-layover {
+  width: 100%;
+  height: 35%;
+  background-image: url('../public/img/skillet.jpg');
+  background-color: #f1f1f1;
+  background-blend-mode: screen;
+  background-size: 100%;
+  display: block;
 }
 
 .fade-in-section {
