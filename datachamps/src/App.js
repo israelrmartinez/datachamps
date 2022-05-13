@@ -84,6 +84,7 @@ const SponsorInfo = () => {
 }
 
 const ProblemStatement = () => {
+  let altStyle = {"text-align":"right", "margin-top":"unset"}
   return (
       <div className="container">
         <header>
@@ -92,13 +93,13 @@ const ProblemStatement = () => {
         <p className="SubText">
         How might Skillet employee achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
         </p>
+        <div className="problem-layover" />
         <header>
-          <h2 className="about-heading">Problem</h2>
-          <p className="SubText">
+          <h2 className="about-heading" style={altStyle}>Problem</h2>
+          <p className="SubText" style={altStyle}>
           Skillet relies on a manual data import system that requires long time to upload and analyze, while also leaving the room for human error. Skillet does not get accurate analytics report on their daily orders, revenue and costs or labor.
           </p>
         </header>
-        <div className="problem-layover" />
       </div>
   )
 }
