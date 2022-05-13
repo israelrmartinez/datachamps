@@ -78,6 +78,7 @@ const SponsorInfo = () => {
         <p className="SubText">
         “In short, Skillet is a modern diner, born on the streets of Seattle in a vintage Airstream kitchen, famous for its all-day brunch menu delivering elevated street food to Seattle world travelers.”
         </p>
+        <div className="sponsor-layover" />
       </div>
   )
 }

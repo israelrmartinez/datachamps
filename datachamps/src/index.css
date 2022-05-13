@@ -22,24 +22,26 @@ code {
 .container {
   /* display: flex; */
   /* background-color: #FFFFFF; */
-  height: 60vh;
+  height: 100vh;
   overflow: hidden;
   justify-content: flex-start;
   align-items: center;
+  width: 80%;
+  max-width: 800px;
   
-  margin: 1rem 1rem;
+  margin: auto;
   overflow: hidden;
 }
 
 .about-container {
-  margin: 1rem 1rem;
+  margin: 0 auto;
 }
 
 .about-heading {
   /* line-height: 1.2em; */
   font-family:'PreloSlabW01-SemiBold';
   font-size: 44px;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   color: #ff5000
 }
 

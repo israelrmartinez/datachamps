@@ -35,7 +35,7 @@ const Header = () => {
             <div>
                 <button className="button"><a href="https://skilletfood.com/" target="_blank">Dine at Skillet now!</a></button>
             </div>
-            <div className="image-layover"/>
+            <div className="header-layover"/>
             {/* <img className="image" src="img/skillet.jpg" alt="Skillet logo" /> */}
             {/* {isMobile &&
                 <div className="mobile-header">

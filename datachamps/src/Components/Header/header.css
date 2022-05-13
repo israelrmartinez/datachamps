@@ -16,9 +16,15 @@ a:visited {
 
 .header {
   justify-content: flex-start;
-  margin-top: 15%;
+  margin-top: 10%;
   align-items: center;
   overflow: hidden;
+}
+
+@media (min-width: 590px) {
+  .header {
+    margin-top: 5%;
+  }
 }
 
 .header-menu {
