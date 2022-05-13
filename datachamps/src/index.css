@@ -1,0 +1,102 @@
+@import url(//db.onlinewebfonts.com/c/e97e13db1ddcdbae1468959fb61acf17?family=PreloSlabW01-SemiBold);
+@font-face {font-family: "PreloSlabW01-SemiBold"; src: url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.eot"); src: url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.woff") format("woff"), url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e97e13db1ddcdbae1468959fb61acf17.svg#PreloSlabW01-SemiBold") format("svg"); }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f1f1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .flex-1 {
+  display: flex;
+} */
+.container {
+  /* display: flex; */
+  /* background-color: #FFFFFF; */
+  height: 100vh;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  
+  margin: auto;
+  overflow: hidden;
+}
+
+.about-container {
+  margin: 0 auto;
+}
+
+.about-heading {
+  /* line-height: 1.2em; */
+  font-family:'PreloSlabW01-SemiBold';
+  font-size: 44px;
+  /* margin-left: 3rem; */
+  color: #ff5000
+}
+
+.flex-container2 {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.card {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.card-body {
+  width: 50%;
+}
+
+.about-images {
+  width:  110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .about-images {
+    width:  210px;
+    height: 200px;
+  }
+}
+
+.card-title {
+  line-height: 1.2em;
+  font-family:'PreloSlabW01-SemiBold';
+  font-size: 26px;
+  font-weight: 500;
+  color: #ff5000;
+}
+
+.card-subtitle {
+  margin: 0.6rem 0;
+  font-family: 'roboto';
+  font-size: 16px;
+}
+
+.card-text {
+  margin: 0.6rem 0;
+  font-family: 'roboto';
+  font-size: 16px;
+  /* color: #808080; */
+}
