@@ -98,6 +98,7 @@ const ProblemStatement = () => {
           Skillet relies on a manual data import system that requires long time to upload and analyze, while also leaving the room for human error. Skillet does not get accurate analytics report on their daily orders, revenue and costs or labor.
           </p>
         </header>
+        <div className="problem-layover" />
       </div>
   )
 }
