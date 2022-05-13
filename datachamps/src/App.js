@@ -73,7 +73,7 @@ const SponsorInfo = () => {
   return (
       <div className="container">
         <header>
-            <h2>Our sponsor</h2>
+            <h2 className="about-heading">Our sponsor</h2>
         </header>
         <p className="SubText">
         We are sponsored by Skillet Restaurant Group, a local business that currently has four restaurant locations in Seattle and growing. They offer dine-in and take-out services and specialize in American fare.
@@ -89,13 +89,13 @@ const ProblemStatement = () => {
   return (
       <div className="container">
         <header>
-            <h2>Problem Statement</h2>
+            <h2 className="about-heading">Problem Statement</h2>
         </header>
         <p className="SubText">
         How might Skillet employee achieve up-to-date data analytics for KPIs so that they can make data-driven business decisions?
         </p>
         <header>
-          <h2>Problem</h2>
+          <h2 className="about-heading">Problem</h2>
           <p className="SubText">
           Skillet relies on a manual data import system that requires long time to upload and analyze, while also leaving the room for human error. Skillet does not get accurate analytics report on their daily orders, revenue and costs or labor.
           </p>
@@ -108,7 +108,7 @@ const Solution = () => {
   return (
       <div className="container">
         <header>
-            <h2>Solution</h2>
+            <h2 className="about-heading">Solution</h2>
         </header>
         <p className="SubText">
         We are introducing Skillet Management Information System - a database that stores organizational data in a single space that is organized to create efficient, insightful analytics of most up-to-date data. Additionally, we are using Tableau to create Analytics Dashboard that automatically updates with data from database (live connection) to visualize most up-to-date KPI metrics.
@@ -122,7 +122,7 @@ const Audience = () => {
   return (
       <div className="container">
         <header>
-          <h2>Audience</h2>
+          <h2 className="about-heading">Audience</h2>
           <p className="SubText">
           Our intended audience is all employees who interacts with data at Skillet, which includes Leadership, Operations and IT. Leadership uses data to understand whether the business as a whole is staying on track with its goals, Operations use analytics to better understand KPIs such as revenue, labor cost and more. IT Team will be the staff we will handoff our project to so they will be responsible for maintenance and troubleshooting.
           </p>
@@ -142,7 +142,7 @@ const S3 = () => {
   return (
       <div className="container">
         <header>
-          <h2>Amazon S3</h2>
+          <h2 className="about-heading">Amazon S3</h2>
           <p className="SubText">
           With Skillet’s current usage of the Toast point-of-sale system, data is saved within the Amazon Web Services S3 storage cloud. By implementing the retrieval of data stored in AWS, we have exported these reports for Skillet to gain access to point of sale information and further gain precise business insights about how their restaurants are operating during Covid.
           </p>
@@ -155,7 +155,7 @@ const Sql = () => {
   return (
       <div className="container">
         <header>
-          <h2>SQL Server</h2>
+          <h2 className="about-heading">SQL Server</h2>
           <p className="SubText">
           Skillet serves hundreds of customers every week at their multiple locations and must consider multiple factors to run their restaurants. We have established a SQL server database for Skillet in order to help organize and consolidate information about their restaurant into this location. By importing the Toast reports into this SQL server, Skillet will be able to access these reports through a centralized database. By utilizing this system, Skillet will be able to expand upon this data archive to further capture data on a day-to-day basis.
           </p>
@@ -168,7 +168,7 @@ const Tableau = () => {
   return (
       <div className="container">
         <header>
-          <h2>Tableau</h2>
+          <h2 className="about-heading">Tableau</h2>
           <p className="SubText">
           Data visualization is a powerful tool for communicating data insights to non-technical audiences. We used Tableau to create the Skillet analytics dashboard. We built business reports based on Skillet’s KPIs, which are unique to their company as a small, local group of restaurants operating during Covid. The Live Connection feature enables immediate access to data stored in the database to reflect real-time analytics for restaurant operations. Tableau is accessible to a business audience, and Skillet will be able to create additional visualizations as their business expands and they identify new KPIs to measure. 
           </p>
