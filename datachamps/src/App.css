@@ -62,9 +62,8 @@ a {
   height: 35%;
   background-image: url('../public/img/skillet.jpg');
   background-color: #f1f1f1;
-  background-blend-mode: screen;
+  background-blend-mode: darken;
   background-size: 100%;
-  display: block;
 }
 
 .fade-in-section {
